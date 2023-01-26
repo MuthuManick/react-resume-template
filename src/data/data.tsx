@@ -69,19 +69,18 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Muthu manickam.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Madurai based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Maestrowiz solutions</strong>
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
@@ -104,16 +103,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a Java full stack software engineer with 5+ years of experience`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Madurai, India', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Cricket, Reading tech blogs', Icon: SparklesIcon},
+    {label: 'Study', text: 'Cms college of Engineering, Namakkal', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Maestrowiz solutions', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -126,16 +123,12 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
+        level: 8,
+      },
+      {
+        name: 'Tamil',
         level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      }
     ],
   },
   {
@@ -143,15 +136,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 5,
       },
       {
-        name: 'Typescript',
+        name: 'Javascript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Jquery',
+        level: 8,
       },
     ],
   },
@@ -159,33 +152,34 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Java',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
+        name: 'node.js',
+        level: 3,
+      }
+      ,
       {
-        name: 'Golang',
-        level: 4,
-      },
+        name: 'Spring & spring boot',
+        level: 7,
+      }
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Databases',
     skills: [
       {
-        name: 'React Native',
+        name: 'MySql',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'MS-SQL',
+        level: 5,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'MariaDb',
+        level: 2,
       },
     ],
   },
@@ -268,39 +262,35 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+    date: 'June 2016',
+    location: 'CMS college of Engineering',
+    title: 'Bachelor of Technology (IT)',
+    content: <p></p>,
+  }
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'December 2021 - Present',
+    location: 'Maestrowiz solutions, Madurai',
+    title: 'Senior Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Working in presence cc tools product, providing custom solutions to the customers based on their requirements.
+        Technologies used - Java-8, Spring-boot, Spring-security, My-Sql, JPA, Web Socket.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'July 2017 - June, 2019',
+    location: 'Fourbends LLC., Madurai',
+    title: 'Junior Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Worked on NBC content integration in Blackboard Learn. 
+        Integrated and worked on Video player in the NBC News Learn website. Worked on video 
+        playlists by consuming SNAS API. Analyzed and debugged production issues in 
+        JAVA applications and implemented fixes. echnologies used - Java, JSP, Spring, Javascript, Jquery, HTML, CSS.
       </p>
     ),
   },
@@ -340,12 +330,12 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'umuthu1008@gmail.com',
+      href: 'mailto:umuthu1008@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
+      text: 'Madurai, India',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
@@ -365,9 +355,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MuthuManick'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8404256/muthu'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/muthu-manickam/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/muthu__manickam.u/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/umuthu1008'},
 ];
